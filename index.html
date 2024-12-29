@@ -1,161 +1,388 @@
 <!DOCTYPE html>
 <html data-theme="light" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hockeys website</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hockeys website</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body class="mx-2 lg:mx-24">
-    <header>
-        <nav>
-            <div class="navbar bg-base-100 ">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li class="text-orange-500"><a>Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Pages</a></li>
-                      <li><a>Blogs</a></li>
-                      <li><a>Contact</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-2xl lg:text-3xl">Hockey<span class="text-orange-500">'</span>s</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li class="text-orange-500"><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end  ">
-                    <i class="fa-solid fa-magnifying-glass mr-3"></i>
-                    <a class="btn bg-orange-500 text-white">Get Ticket</a>
-                </div>
-              </div>
-        </nav>
-      <section class="relative mt-3">
-        <div class="carousel w-full">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img
-              src="Images/1.png"
-              class="w-full" />
-            <div class="absolute left-5 right-5 top-2/3 flex -translate-y-1/2 transform gap-2  ">
-              <a href="#slide4" class="btn btn-circle text-white bg-orange-500">❮</a>
-              <a href="#slide2" class="btn btn-circle text-white bg-orange-500">❯</a>
+  <header>
+    <nav>
+      <div class="navbar bg-base-100 ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li class="text-orange-500"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-2xl lg:text-3xl">Hockey<span class="text-orange-500">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-orange-500"><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end  ">
+          <i class="fa-solid fa-magnifying-glass mr-3"></i>
+          <a class="btn bg-orange-500 text-white">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- carousel section -->
+    <section class="relative mt-3">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute left-5 right-5 top-2/3 flex -translate-y-1/2 transform gap-2  ">
+            <a href="#slide4" class="btn btn-circle text-white bg-orange-500">❮</a>
+            <a href="#slide2" class="btn btn-circle text-white bg-orange-500">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/1-2.jpg" class="w-full " />
+          <div class="absolute left-5 right-5 top-2/3 flex -translate-y-1/2 transform gap-2">
+            <a href="#slide1" class="btn btn-circle text-white bg-orange-500">❮</a>
+            <a href="#slide3" class="btn btn-circle text-white bg-orange-500">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/1-3.jpg" class="w-full" />
+          <div class="absolute left-5 right-5 top-2/3 flex -translate-y-1/2 transform gap-2">
+            <a href="#slide2" class="btn btn-circle text-white bg-orange-500">❮</a>
+            <a href="#slide4" class="btn btn-circle text-white bg-orange-500">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="Images/1-4.jpg" class="w-full" />
+          <div class="absolute left-5 right-5 top-2/3 flex -translate-y-1/2 transform gap-2">
+            <a href="#slide3" class="btn btn-circle text-white bg-orange-500">❮</a>
+            <a href="#slide1" class="btn btn-circle text-white bg-orange-500">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bg-black rounded-lg p-3 text-white-300 lg:relative left-1/2 bottom-48 lg:w-1/2">
+      <h3 class="text-xl lg:text-2xl text-white">Meet all the heroes from the field</h3>
+      <p class="text-slate-500 mt-3">On Tap: Kopitar leads 1st-place Kings into Calgary
+        Blackwood makes 44 saves, Sharks shut out Devils
+        Gibson makes 38 saves, Ducks hold off Blue Jackets
+        Buzz: Hayes week to week for Penguins with injury
+        Ovechkin can pass Gretzky this season, Lindros says
+        NHL nationally televised games for week of Nov</p>
+
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="text-center py-4 border-y-2 border-dashed my-8 lg:mt-[-100px] py-4 ">
+        <h2 class="text-3xl font-semibold">Professional Hockeys Club</h2>
+        <p class="text-slate-500">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+          Purus urna in sit nullam proin. </p>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-4 my-12">
+
+        <div class="text-center mt-3 ">
+          <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+          <h3 class="text-xl mt-3">Prayer Facility</h3>
+          <p class="text-slate-500 mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="text-center mt-3">
+          <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
+          <h3 class="text-xl mt-3">Prayer Facility</h3>
+          <p class="text-slate-500 mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="text-center mt-3">
+          <div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
+          <h3 class="text-xl mt-3">Prayer Facility</h3>
+          <p class="text-slate-500 mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="text-center mt-3">
+          <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+          <h3 class="text-xl mt-3">Prayer Facility</h3>
+          <p class="text-slate-500 mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+
+      </div>
+    </section>
+    <!-- program section -->
+    <section>
+      <div class="text-center border-dashed border-y-2 my-8">
+        <h1 class="text-3xl font-semibold ">Programs</h1>
+        <p class="text-slate-500 py-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+          dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <!-- programs -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <!-- junior program -->
+        <div class="hero h-[350px] rounded-lg" style="background-image: url(../hockeys-website/Images/2.png);">
+          <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+          <div class="hero-content text-neutral-content">
+            <div class="max-w-md ">
+              <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
+              <p class="mb-5">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                quasi. In deleniti eaque aut repudiandae et a id nisi.
+              </p>
+              <button class="btn border-0 text-white bg-rose-700">Register Now</button>
             </div>
           </div>
-          <div id="slide2" class="carousel-item relative w-full">
-            <img
-              src="Images/1-2.jpg"
-              class="w-full " />
-              <div class="absolute left-5 right-5 top-2/3 flex -translate-y-1/2 transform gap-2">
-                <a href="#slide1" class="btn btn-circle text-white bg-orange-500">❮</a>
-                <a href="#slide3" class="btn btn-circle text-white bg-orange-500">❯</a>
-              </div>
-          </div>
-          <div id="slide3" class="carousel-item relative w-full">
-            <img
-              src="Images/1-3.jpg"
-              class="w-full" />
-              <div class="absolute left-5 right-5 top-2/3 flex -translate-y-1/2 transform gap-2">
-                <a href="#slide2" class="btn btn-circle text-white bg-orange-500">❮</a>
-                <a href="#slide4" class="btn btn-circle text-white bg-orange-500">❯</a>
-              </div>
-          </div>
-          <div id="slide4" class="carousel-item relative w-full">
-            <img
-              src="Images/1-4.jpg"
-              class="w-full" />
-              <div class="absolute left-5 right-5 top-2/3 flex -translate-y-1/2 transform gap-2">
-                <a href="#slide3" class="btn btn-circle text-white bg-orange-500">❮</a>
-                <a href="#slide1" class="btn btn-circle text-white bg-orange-500">❯</a>
-              </div>
+        </div>
+        <!-- Teenager Program -->
+        <div class="hero h-[350px] rounded-lg" style="background-image: url(../hockeys-website/Images/3.png);">
+          <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+          <div class="hero-content text-neutral-content ">
+            <div class="max-w-md ">
+              <h1 class="mb-5 text-5xl font-bold">Teenager Program</h1>
+              <p class="mb-5">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                quasi. In deleniti eaque aut repudiandae et a id nisi.
+              </p>
+              <button class="btn border-0 text-white bg-rose-700">Register Now</button>
+            </div>
           </div>
         </div>
-      </section>
-      <div class="bg-black rounded-lg p-3 text-white-300 lg:relative left-1/2 bottom-48 lg:w-1/2">
-        <h3 class="text-xl lg:text-2xl text-white">Meet all the heroes from the field</h3>
-        <p class="text-slate-500 mt-3">On Tap: Kopitar leads 1st-place Kings into Calgary
-          Blackwood makes 44 saves, Sharks shut out Devils
-          Gibson makes 38 saves, Ducks hold off Blue Jackets
-          Buzz: Hayes week to week for Penguins with injury
-          Ovechkin can pass Gretzky this season, Lindros says
-          NHL nationally televised games for week of Nov</p>
-        
+        <!-- Professional Program -->
+        <div class="hero h-[350px] lg:col-span-2 rounded-lg"
+          style="background-image: url(../hockeys-website/Images/4.png);">
+          <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+          <div class="hero-content text-neutral-content">
+            <div class="max-w-md lg:ml-[-680px]">
+              <h1 class="mb-5 text-5xl font-bold">Professional Program</h1>
+              <p class="mb-5">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                quasi. In deleniti eaque aut repudiandae et a id nisi.
+              </p>
+              <button class="btn border-0 text-white bg-rose-700">Register Now</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
-    <main>
-      <section>
-        <div class="text-center py-4 border-y-2 border-dashed my-8 lg:mt-[-100px] py-4 ">
-          <h2 class="text-3xl font-bold">Professional Hockeys Club</h2>
-          <p class="text-slate-500">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-        </div>
-        <div class="flex flex-col lg:flex-row gap-4 my-12">
-          
-          <div class="text-center mt-3 ">
-            <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
-            <h3 class="text-xl mt-3">Prayer Facility</h3>
-            <p class="text-slate-500 mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
+    </section>
+    <!-- new product section -->
+    <section>
+      <!-- description div -->
+      <div class="text-center my-8 border-y-2 border-dashed py-4 ">
+        <h2 class="text-black text-3xl font-semibold">Our New Products</h2>
+        <p class="text-slate-500">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+          Purus urna in sit nullam proin. </p>
+      </div>
+      <!-- cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <!-- image-5 -->
+        <div class="card card-side bg-base-100 shadow-xl flex flex-col lg:flex-row  m-5 border-2">
+          <figure class="lg:border-2 border-dashed m-5 ">
+            <img src="Images/5.png" alt="Movie" />
+          </figure>
+          <div class="mx-5 lg:mx-0 my-0 lg:my-5 flex flex-col justify-center">
+            <ul class="flex gap-4 mb-1">
+              <li class="text-slate-400"><i class="fa-solid fa-star" style="color: #ffc73b;"></i> 5.0</li>
+              <li class="text-slate-400"><i class="fa-duotone fa-solid fa-eye"></i> 20</li>
+              <li class="text-slate-400"><i class="fa-regular fa-heart"></i> 200</li>
+            </ul>
+            <h4 class="text-xl font-bold mb-1">World Cup Flags Football</h4>
+            <p class="text-slate-500 mb-1">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            <ul class="flex gap-8 text-center">
+              <li class="text-lg font-bold text-rose-600">Price - $22.00</li>
+              <li class="text-slate-500 "><i class="fa-solid fa-truck"></i> Delivery Fee: Free</li>
+            </ul>
           </div>
-          <div class="text-center mt-3">
-            <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
-            <h3 class="text-xl mt-3">Prayer Facility</h3>
-            <p class="text-slate-500 mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
-          </div>
-          <div class="text-center mt-3">
-            <div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
-            <h3 class="text-xl mt-3">Prayer Facility</h3>
-            <p class="text-slate-500 mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
-          </div>
-          <div class="text-center mt-3">
-            <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
-            <h3 class="text-xl mt-3">Prayer Facility</h3>
-            <p class="text-slate-500 mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
-          </div>     
-    
         </div>
-      </section>
-      <section>
-        <div class="text-center border-dashed border-y-2 my-8">
-          <h1 class="text-3xl font-bold ">Programs</h1>
-          <p class="text-slate-500 py-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-        </div>
-        <div class="h-[700px]">
-          <div  class="bg-cover h-[300px] w-[360px]" style="background-image: url(../Images/2.png)">
-            <h2>Junior Program</h2>
-            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-            <button class="btn bg-rose-600 text-white">Register Now</button>
-          </div>
-          <div></div>
-          <div></div>
-        </div>
-      </section>
-    </main>
-    <footer>
 
-    </footer>
+        <!-- image-6 -->
+        <div class="card card-side bg-base-100 shadow-xl flex flex-col lg:flex-row  m-5 border-2">
+          <figure class="lg:border-2 border-dashed m-5 ">
+            <img src="Images/6.png" alt="Movie" />
+          </figure>
+          <div class="mx-5 lg:mx-0 my-0 lg:my-5 flex flex-col justify-center">
+            <ul class="flex gap-4 mb-1">
+              <li class="text-slate-400"><i class="fa-solid fa-star" style="color: #ffc73b;"></i> 5.0</li>
+              <li class="text-slate-400"><i class="fa-duotone fa-solid fa-eye"></i> 20</li>
+              <li class="text-slate-400"><i class="fa-regular fa-heart"></i> 200</li>
+            </ul>
+            <h4 class="text-xl font-bold mb-1">World Cup Flags Football</h4>
+            <p class="text-slate-500 mb-1">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            <ul class="flex gap-8 text-center">
+              <li class="text-lg font-bold text-rose-600">Price - $22.00</li>
+              <li class="text-slate-500 "><i class="fa-solid fa-truck"></i> Delivery Fee: Free</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- image-7 -->
+        <div class="card card-side bg-base-100 shadow-xl flex flex-col lg:flex-row  m-5 border-2">
+          <figure class="lg:border-2 border-dashed m-5 ">
+            <img src="Images/7.png" alt="Movie" />
+          </figure>
+          <div class="mx-5 lg:mx-0 my-0 lg:my-5 flex flex-col justify-center">
+            <ul class="flex gap-4 mb-1">
+              <li class="text-slate-400"><i class="fa-solid fa-star" style="color: #ffc73b;"></i> 5.0</li>
+              <li class="text-slate-400"><i class="fa-duotone fa-solid fa-eye"></i> 20</li>
+              <li class="text-slate-400"><i class="fa-regular fa-heart"></i> 200</li>
+            </ul>
+            <h4 class="text-xl font-bold mb-1">World Cup Flags Football</h4>
+            <p class="text-slate-500 mb-1">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            <ul class="flex gap-8 text-center">
+              <li class="text-lg font-bold text-rose-600">Price - $22.00</li>
+              <li class="text-slate-500 "><i class="fa-solid fa-truck"></i> Delivery Fee: Free</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- image-8 -->
+        <div class="card card-side bg-base-100 shadow-xl flex flex-col lg:flex-row  m-5 border-2">
+          <figure class="lg:border-2 border-dashed m-5 ">
+            <img src="Images/8.png" alt="Movie" />
+          </figure>
+          <div class="mx-5 lg:mx-0 my-0 lg:my-5 flex flex-col justify-center">
+            <ul class="flex gap-4 mb-1">
+              <li class="text-slate-400"><i class="fa-solid fa-star" style="color: #ffc73b;"></i> 5.0</li>
+              <li class="text-slate-400"><i class="fa-duotone fa-solid fa-eye"></i> 20</li>
+              <li class="text-slate-400"><i class="fa-regular fa-heart"></i> 200</li>
+            </ul>
+            <h4 class="text-xl font-bold mb-1">World Cup Flags Football</h4>
+            <p class="text-slate-500 mb-1">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            <ul class="flex gap-8 text-center">
+              <li class="text-lg font-bold text-rose-600">Price - $22.00</li>
+              <li class="text-slate-500 "><i class="fa-solid fa-truck"></i> Delivery Fee: Free</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- image-9 -->
+        <div class="card card-side bg-base-100 shadow-xl flex flex-col lg:flex-row  m-5 border-2">
+          <figure class="lg:border-2 border-dashed m-5 ">
+            <img src="Images/9.png" alt="Movie" />
+          </figure>
+          <div class="mx-5 lg:mx-0 my-0 lg:my-5 flex flex-col justify-center">
+            <ul class="flex gap-4 mb-1">
+              <li class="text-slate-400"><i class="fa-solid fa-star" style="color: #ffc73b;"></i> 5.0</li>
+              <li class="text-slate-400"><i class="fa-duotone fa-solid fa-eye"></i> 20</li>
+              <li class="text-slate-400"><i class="fa-regular fa-heart"></i> 200</li>
+            </ul>
+            <h4 class="text-xl font-bold mb-1">World Cup Flags Football</h4>
+            <p class="text-slate-500 mb-1">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            <ul class="flex gap-8 text-center">
+              <li class="text-lg font-bold text-rose-600">Price - $22.00</li>
+              <li class="text-slate-500 "><i class="fa-solid fa-truck"></i> Delivery Fee: Free</li>
+            </ul>
+          </div>
+        </div>
+        <!-- image-10 -->
+        <div class="card card-side bg-base-100 shadow-xl flex flex-col lg:flex-row  m-5 border-2">
+          <figure class="lg:border-2 border-dashed m-5 ">
+            <img src="Images/10.png" alt="Movie" />
+          </figure>
+          <div class="mx-5 lg:mx-0 my-0 lg:my-5 flex flex-col justify-center">
+            <ul class="flex gap-4 mb-1">
+              <li class="text-slate-400"><i class="fa-solid fa-star" style="color: #ffc73b;"></i> 5.0</li>
+              <li class="text-slate-400"><i class="fa-duotone fa-solid fa-eye"></i> 20</li>
+              <li class="text-slate-400"><i class="fa-regular fa-heart"></i> 200</li>
+            </ul>
+            <h4 class="text-xl font-bold mb-1">World Cup Flags Football</h4>
+            <p class="text-slate-500 mb-1">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+            <ul class="flex gap-8 text-center">
+              <li class="text-lg font-bold text-rose-600">Price - $22.00</li>
+              <li class="text-slate-500 "><i class="fa-solid fa-truck"></i> Delivery Fee: Free</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- clients question section -->
+    <section>
+      <div class="text-center my-8 border-y-2 border-dashed py-4 ">
+        <h2 class="text-black text-3xl font-semibold">Clients Question</h2>
+        <p class="text-slate-500">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+          Purus urna in sit nullam proin. </p>
+      </div>
+      <!-- accordion div -->
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-2 p-5 my-5 border-2 rounded-lg">
+        <figure class="border-2 rounded-xl border-dashed">
+          <img src="Images/11.png" alt="">
+        </figure>
+
+        <div class="flex flex-col gap-3">
+          <div class="collapse collapse-plus border-b-2 ">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">Our Equipment</div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus border-b-2">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">Hockey Training</div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus border-b-2">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">Private Lessons</div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus border-b-2">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">Ski Touring</div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus border-b-2">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">Booking</div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus border-b-2">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">Pricings</div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- get in touch section -->
+    <section>
+      <div class="text-center my-8 border-y-2 border-dashed py-4 ">
+        <h2 class="text-black text-3xl font-semibold">Get In Touch</h2>
+        <p class="text-slate-500">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.Purus urna in sit nullam proin. </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
