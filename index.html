@@ -12,8 +12,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="mx-2 lg:mx-24">
-  <header>
+<body>
+  <header class="mx-2 lg:mx-24">
     <nav>
       <div class="navbar bg-base-100 ">
         <div class="navbar-start">
@@ -94,7 +94,7 @@
 
     </div>
   </header>
-  <main>
+  <main class="mx-2 lg:mx-24">
     <section>
       <div class="text-center py-4 border-y-2 border-dashed my-8 lg:mt-[-100px] py-4 ">
         <h2 class="text-3xl font-semibold">Professional Hockeys Club</h2>
@@ -103,22 +103,22 @@
       </div>
       <div class="flex flex-col lg:flex-row gap-4 my-12">
 
-        <div class="text-center mt-3 ">
-          <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+        <div class="text-center mt-3 mx-8">
+          <div class="radial-progress " style="--value:87;" role="progressbar">87%</div>
           <h3 class="text-xl mt-3">Prayer Facility</h3>
           <p class="text-slate-500 mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 mx-8">
           <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
           <h3 class="text-xl mt-3">Prayer Facility</h3>
           <p class="text-slate-500 mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 mx-8">
           <div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
           <h3 class="text-xl mt-3">Prayer Facility</h3>
           <p class="text-slate-500 mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 mx-8">
           <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
           <h3 class="text-xl mt-3">Prayer Facility</h3>
           <p class="text-slate-500 mt-3">Amet consectetur. Condimentum dignissim adipiscing .</p>
@@ -373,16 +373,120 @@
     </section>
 
     <!-- get in touch section -->
-    <section>
+    <section class="mt-12">
       <div class="text-center my-8 border-y-2 border-dashed py-4 ">
         <h2 class="text-black text-3xl font-semibold">Get In Touch</h2>
-        <p class="text-slate-500">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.Purus urna in sit nullam proin. </p>
+        <p class="text-slate-500">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+          dolor.Purus urna in sit nullam proin. </p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row grid grid-cols-1 lg:grid-cols-3">
+        <!-- contact items -->
+        <div class="border-2 rounded-xl">
+          <div class="m-8 p-5 bg-lime-100 rounded-xl ">
+            <i class="fa-solid fa-phone-volume fa-2xl " style="color: #89f051;"></i>
+            <p class="text-slate-500 my-3">Phone Number</p>
+            <h2 class="text-black font-bold">(+62) 123-321-543</h2>
+
+          </div>
+          <div class="m-8 p-5 bg-yellow-100 rounded-xl ">
+            <i class="fa-solid fa-envelope fa-2xl" style="color: #FFD43B;"></i>
+            <p class="text-slate-500 my-3">E-mail</p>
+            <h2 class="text-black font-bold">hockeys@support.com</h2>
+          </div>
+          <div class="m-8 p-5 bg-blue-100 rounded-xl ">
+            <i class="fa-solid fa-location-dot fa-flip-horizontal fa-2xl" style="color: #3d91ff;"></i>
+            <p class="text-slate-500 my-3">Location</p>
+            <h2 class="text-black font-bold">152/1 Mohakhali Wireless Gate</h2>
+          </div>
+        </div>
+        <!-- input items -->
+        <div class="col-span-2">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="mx-8 my-4">
+              <h2 class="font-semibold mb-2">Your Name</h2>
+              <input class="border-2 rounded-lg h-12 p-4 w-full bg-gray-200" placeholder="Enter your full name"
+                type="text">
+            </div>
+            <div class="mx-8 my-4">
+              <h2 class="font-semibold mb-2">Your E-mail</h2>
+              <input class="border-2 rounded-lg h-12 p-4 w-full bg-gray-200" placeholder="Enter your e-mail address"
+                type="text">
+            </div>
+            <div class="mx-8 my-4">
+              <h2 class="font-semibold mb-2">Subject</h2>
+              <input class="border-2 rounded-lg h-12 p-4 w-full bg-gray-200" placeholder="Enter your subject"
+                type="text">
+            </div>
+            <div class="mx-8 my-4">
+              <h2 class="font-semibold mb-2">Phone Number</h2>
+              <input class="border-2 rounded-lg h-12 p-4 w-full bg-gray-200" placeholder="Enter your phone number"
+                type="text">
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center gap-5 m-8">
+            <textarea class="h-[250px] w-full border-2 p-5 rounded-lg text-slate-400" name="" id="">Write your message</textarea>
+            <button class="p-3 bg-rose-700 text-white rounded-lg w-full ">Send Message</button>
+          </div>
+
+        </div>
       </div>
     </section>
+    <!-- social media section -->
+    <section class="flex flex-col items-center gap-2 bg-gray-200 rounded-lg p-5 my-8 w-full">
+      <h2 class="text-2xl font-bold">Social Media</h2>
+      <ul class="flex gap-5">
+        <li><i class="fa-brands fa-twitter" style="color: #202122;"></i></li>
+        <li><i class="fa-brands fa-facebook-f" style="color: #19191a;"></i></li>
+        <li><i class="fa-brands fa-instagram" style="color: #19191a;"></i></li>
+        <li><i class="fa-brands fa-github" style="color: #1e1e1f;"></i></li>
+      </ul>
+    </section>   
   </main>
-  <footer>
 
+  <footer class="text-white p-8 bg-black w-full grid grid-cols-2 lg:grid-cols-4 gap-12">
+    <div class="col-span-2 lg:col-span-1 flex flex-col items-center lg:items-start ">
+      <h2 class="text-xl font-semibold mb-2">Get in touch</h2>
+      <p class="text-slate-400 mb-2">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      <ul>
+        <li class="text-slate-400"><i class="fa-regular fa-envelope " style="color: #d60505;"></i> hockeys@support.com</li>
+
+        <li class="text-slate-400"><i class="fa-solid fa-phone-volume" style="color: #dc2909;"></i> (+62) 123-321-543</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Company</h2>
+      <ul class="text-slate-400 flex flex-col gap-4">
+        <li>About us</li>
+        <li>Leadership</li>
+        <li>Careers</li>
+        <li>News & article</li>
+        <li>Legal notice</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Support</h2>
+      <ul class="text-slate-400 flex flex-col gap-4">
+        <li>Help Center</li>
+        <li>FAQ</li>
+        <li>Ticket Support</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class="col-span-2 lg:col-span-1 flex flex-col items-center lg:items-start">
+      <h2 class="text-xl font-semibold mb-2">Services</h2>
+      <ul class="text-slate-400 flex flex-col items-center lg:items-start gap-4">
+        <li>Academy</li>
+        <li>Group Lessons</li>
+        <li>Private Lesson</li>
+        <li>Hockeys for kid</li>
+        <li>Hockeys for adult</li>
+      </ul>
+    </div>
   </footer>
 </body>
+
+
 
 </html>
